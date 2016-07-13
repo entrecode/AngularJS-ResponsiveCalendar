@@ -1,5 +1,5 @@
 <div ng-switch="calendarMode">
-    <div class="row calendar-navbar">
+    <div class="row calendar-navbar" ng-hide="config.hideNav">
         <div class="nav-left col-xs-2">
             <button type="button" class="btn btn-default btn-sm" ng-click="move(-1)"><i
                     class="glyphicon glyphicon-chevron-left"></i></button>

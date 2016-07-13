@@ -1014,7 +1014,7 @@ angular.module('ui.rCalendar', ['ui.rCalendar.tpls'])
 angular.module("template/rcalendar/calendar.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("template/rcalendar/calendar.html",
     "<div ng-switch=\"calendarMode\">\n" +
-    "    <div class=\"row calendar-navbar\">\n" +
+    "    <div class=\"row calendar-navbar\" ng-hide=\"config.hideNav\">\n" +
     "        <div class=\"nav-left col-xs-2\">\n" +
     "            <button type=\"button\" class=\"btn btn-default btn-sm\" ng-click=\"move(-1)\"><i\n" +
     "                    class=\"glyphicon glyphicon-chevron-left\"></i></button>\n" +

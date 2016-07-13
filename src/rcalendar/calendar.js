@@ -239,7 +239,8 @@ angular.module('ui.rCalendar', [])
                 calendarMode: '=',
                 rangeChanged: '&',
                 eventSelected: '&',
-                timeSelected: '&'
+                timeSelected: '&',
+                config: '=?'
             },
             require: ['calendar', '?^ngModel'],
             controller: 'ui.rCalendar.CalendarController',
